@@ -56,19 +56,19 @@ export default function App() {
   // ================================================================
 
   function getAllTasks(tasks) {
-    // TODO
+    return tasks;
   }
 
   function getIncompleteTasks(tasks) {
-    // TODO
+    return tasks.filter(task => task.completed===false);
   }
 
   function findTaskByTitle(tasks, title) {
-    // TODO
+    return tasks.find(task => task.title.toLowerCase().includes(title.toLowerCase()));
   }
 
   function countCompletedTasks(tasks) {
-    // TODO
+   return tasks.filter(task => task.completed===true).length;
   }
 
   function addTask(tasks, newTask) {
